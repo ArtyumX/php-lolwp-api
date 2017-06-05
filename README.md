@@ -9,7 +9,7 @@ require 'class.lolwpapi.php';
 
 $api = new LoLWPAPI('YOUR_API_KEY_HERE');
 
-// Get all wallpapers
+// Get the latest wallpapers (limit: 20)
 print_r($api->getWallpapers()
             ->result());
 
