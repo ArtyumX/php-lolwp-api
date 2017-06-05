@@ -90,10 +90,6 @@ print_r($api->getComments()
             ->parent_ID() // integer
             ->wallpaper_ID() // integer
             ->result());
-
-
-
-
 ```
 
 ### Contributing
