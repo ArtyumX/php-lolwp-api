@@ -1,7 +1,8 @@
 # php-lolwp-api
 PHP class for LoLWallpapers.net api
 
-# Usages
+# Usage
+Here's a basic usage example:
 ```php
 <?php
 
