@@ -142,7 +142,7 @@ class LoLWPAPI {
         return $this;
     }
     
-    function __desctruct() {
+    function __destruct() {
         curl_close($this->curl);
     }
     
