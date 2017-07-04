@@ -33,7 +33,7 @@ By default the **result()** method will return an array. If you would like to ge
 $api->setOutputType('json');
 ```
 
-### Get {wallpaper|category|artist|comment} by ID.
+### Get a {wallpaper|category|artist|comment} by ID.
 Simply pass the ID as argument.
 
 ```php
