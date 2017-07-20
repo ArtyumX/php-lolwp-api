@@ -11,20 +11,20 @@ require 'class.lolwpapi.php';
 $api = new LoLWPAPI('YOUR_API_KEY_HERE');
 
 // Get the latest wallpapers (default limit: 20)
-print_r($api->getWallpapers()
-            ->result());
+echo $api->getWallpapers()
+         ->result();
 
 // Get all categories
-print_r($api->getCategories()
-            ->result());
+echo $api->getCategories()
+         ->result();
 
 // Get all artists
-print_r($api->getArtists()
-            ->result());
+echo $api->getArtists()
+         ->result();
             
 // Get all comments
-print_r($api->getComments()
-            ->result());
+echo $api->getComments()
+         ->result();
 ```
 
 ### Output type
