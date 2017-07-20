@@ -38,20 +38,20 @@ Simply pass the ID as argument.
 
 ```php
 // Get a wallpaper by ID
-print_r($api->getWallpapers(13444)
-            ->result());
+echo $api->getWallpapers(13444)
+         ->result();
 
 // Get a category by ID
-print_r($api->getCategories(311)
-            ->result());
+echo $api->getCategories(311)
+         ->result();
 
 // Get an artist by ID
-print_r($api->getArtists(800)
-            ->result());
+echo $api->getArtists(800)
+         ->result();
             
 // Get a comment by ID
-print_r($api->getComments(134)
-            ->result());
+echo $api->getComments(134)
+            ->result();
 ```
 
 ### Query parameters
@@ -59,38 +59,38 @@ To get informations about the available query parameters for each endpoints, ple
 
 ```php
 // Endpoint: /wallpapers
-print_r($api->getWallpapers()
-            ->page() // integer
-            ->limit() // integer
-            ->order() // string
-            ->orderby() // string
-            ->category_ID() // integer
-            ->artist_ID() // integer
-            ->search() // string
-            ->result());
+echo $api->getWallpapers()
+         ->page() // integer
+         ->limit() // integer
+         ->order() // string
+         ->orderby() // string
+         ->category_ID() // integer
+         ->artist_ID() // integer
+         ->search() // string
+         ->result();
             
 // Endpoint: /categories
-print_r($api->getCategories()
-            ->order() // string
-            ->orderby() // string
-            ->hide_empty() // boolean
-            ->child_of() // integer
-            ->childless() // boolean
-            ->result());
+echo $api->getCategories()
+         ->order() // string
+         ->orderby() // string
+         ->hide_empty() // boolean
+         ->child_of() // integer
+         ->childless() // boolean
+         ->result();
 
 // Endpoint: /artists
-print_r($api->getArtists()
-            ->order() // string
-            ->orderby() // string
-            ->result());
+echo $api->getArtists()
+         ->order() // string
+         ->orderby() // string
+         ->result();
             
 // Endpoint: /comments
-print_r($api->getComments()
-            ->order() // string
-            ->orderby() // string
-            ->parent_ID() // integer
-            ->wallpaper_ID() // integer
-            ->result());
+echo $api->getComments()
+         ->order() // string
+         ->orderby() // string
+         ->parent_ID() // integer
+         ->wallpaper_ID() // integer
+         ->result();
 ```
 
 ### Contributing
