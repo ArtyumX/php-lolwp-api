@@ -60,36 +60,36 @@ To get informations about the available query parameters for each endpoints, ple
 ```php
 // Endpoint: /wallpapers
 echo $api->getWallpapers()
-         ->page() // integer
-         ->limit() // integer
-         ->order() // string
-         ->orderby() // string
-         ->category_ID() // integer
-         ->artist_ID() // integer
-         ->search() // string
+         ->page(int)
+         ->limit(int)
+         ->order(string)
+         ->orderby(string)
+         ->category_ID(int)
+         ->artist_ID(int)
+         ->search(string)
          ->result();
             
 // Endpoint: /categories
 echo $api->getCategories()
-         ->order() // string
-         ->orderby() // string
-         ->hide_empty() // boolean
-         ->child_of() // integer
-         ->childless() // boolean
+         ->order(string)
+         ->orderby(string)
+         ->hide_empty(bool)
+         ->child_of(int)
+         ->childless(bool)
          ->result();
 
 // Endpoint: /artists
 echo $api->getArtists()
-         ->order() // string
-         ->orderby() // string
+         ->order(string)
+         ->orderby(string)
          ->result();
             
 // Endpoint: /comments
 echo $api->getComments()
-         ->order() // string
-         ->orderby() // string
-         ->parent_ID() // integer
-         ->wallpaper_ID() // integer
+         ->order(string)
+         ->orderby(string)
+         ->parent_ID(int)
+         ->wallpaper_ID(int)
          ->result();
 ```
 
