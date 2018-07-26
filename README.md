@@ -1,5 +1,7 @@
+**Note: This wrapper became outdated after the API release on [April 25, 2018](https://lolwallpapers.docs.apiary.io/#introduction/changelog). Not all methods will work as expected and I don't have the time to update it at the moment. Feel free to make a commit/PR**
+
 # php-lolwp-api
-PHP class for LoLWallpapers.net api
+PHP class for the LoLWallpapers.net api.
 
 # Usage
 Here's a basic usage example:
